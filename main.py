@@ -120,6 +120,7 @@ async def my_course(message,state:FSMContext):
         raqam=data.get('raqam')
         await message.answer('Malumotlar adminga jo\'natildi',reply_markup=kurslar)
         await bot.send_message(chat_id=866872982,text=f'Ismi:{ism}\nFamiliyasi:{familiya}\nTelefon raqami:{raqam}')
+        await bot.send_message(chat_id=1381734005,text=f'Ismi:{ism}\nFamiliyasi:{familiya}\nTelefon raqami:{raqam}')
         await state.finish()
     if  message.text=='Bekor qilish❌❌❌':
         await state.finish()
